@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block title %}
+  <title>Base html page</title>
+  {% endblock %}
+</head>
+<!-- {% block body_block %}
+     {% endblock %} -->
+<body align="center">
+  {% block content %}
+    <h1>"Welcome to my Base.html page"</h1>
+      
+    <a href="{% url 'myapp2:home'  %}">Home</a>
+    <a href="{% url 'myapp2:child' %}">Child</a>
+    <a href="{% url 'index' %}">Index</a>
+
+  {% endblock %}
+</body>
+</html>
